@@ -1,3 +1,3 @@
-FROM ubuntu:22.04
+FROM ghcr.io/mdsumner/gdal-builds:rocker-gdal-dev-python
 CMD ["/bin/sh", "-c", "echo 'It works!'"]
 

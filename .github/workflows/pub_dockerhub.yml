@@ -12,6 +12,8 @@ name: Publish Docker image
 on:
   push:
     paths: ['Dockerfile', '.github/workflows/pub_dockerhub.yml']
+  schedule:
+     - cron: '0 0,10 * * *'
 
 jobs:
   push_to_registry:
